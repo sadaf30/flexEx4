@@ -1,8 +1,162 @@
 *{
 	box-sizing: border-box;
-	padding: 0;
+	padding:0;
 	margin: 0;
 }
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
 body{
-	background-color:lemonchiffon;
+	background-color:lightpink;
+	padding-top: 60px;
 }
+footer{
+	text-align: center;
+}
+footer a{
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	font-family: 'Pacifico', cursive;
+
+}
+footer a:hover{
+		color:lemonchiffon;
+		border: 5px dotted lemonchiffon;
+		transition: 0.5s;
+}
+
+#about{
+	text-align: center;
+	color: #fff;
+	font-family: 'Pacifico', cursive;
+	font-size: 60px;
+	text-decoration:dotted underline;
+
+}
+.top-nav{
+	display: flex;
+	background:lightpink;
+	min-height: 80px;
+	overflow: hidden;
+	align-items: center;
+	padding: 20px;
+	position: fixed;
+	width: 100%;
+	top:0;
+	left: 0;
+}
+.top-nav a{
+	color: #fff;
+	text-decoration: none;
+	padding: 5px;
+}
+.top-nav a:hover{
+		color:lemonchiffon;
+		border: 5px dotted lemonchiffon;
+		transition: 0.5s;
+}
+.brand-text{
+	font-size: 40px;
+	font-family: 'Pacifico', cursive;
+	margin-left: 15px;
+
+	
+}
+.nav-list {
+	list-style: none;
+	display: flex;
+	margin-left: auto;
+	font-size: 20px;
+	font-family: 'Pacifico', cursive;
+}
+.nav-list li{
+		margin:0 15px;
+
+}
+.bg{
+	height: calc(100vh - 80px);
+	width: 100%;
+	background-image: url(../img/large.jpeg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background-image .5s;
+
+
+}
+.bg h1{
+	color: #fff;
+	background-color: lightpink;
+	padding: 20px;
+	border-radius: 50px;
+	font-family: 'Pacifico', cursive;
+	opacity: 0.5;
+
+}
+.flex-row{
+	display: flex;
+	flex-wrap: nowrap;
+	color: #fff;
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+
+}
+.col4-2-1{
+	width: 23%;
+	margin: 1%;
+	padding: 10px;
+
+}
+.col1{
+	width: 100%;
+	border-radius: 50% ;
+	border:2px double oldlace;
+}
+@media (max-width: 1200px) {
+	.bg{
+		background-image: url(../img/medium.jpeg);
+	}
+	.col4-2-1{
+		width: 48%;
+	}
+	.flex-row{
+	flex-wrap: wrap;
+
+}
+}
+@media (max-width: 800px) {
+	.top-nav{
+		display: inline-block;
+		
+	
+
+	}
+	
+	
+	.bg{
+		background-image: url(../img/small.jpeg);
+	}
+	.col4-2-1{
+		width: 98%;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
