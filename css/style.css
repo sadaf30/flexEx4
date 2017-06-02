@@ -126,11 +126,9 @@ footer a:hover{
 }
 }
 @media (max-width: 800px) {
-	.top-nav{
+	.nav-list{
 		display: inline-block;
 		
-	
-
 	}
 	
 	
